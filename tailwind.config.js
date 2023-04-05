@@ -9,7 +9,30 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        backgroundColor: "var(--backgroundColor)",
+        primaryColor: "var(--primaryColor)",
+        primaryTextColor: "var(--primaryTextColor)",
+      },
+      fontSize: {
+        headlineBig: "var(--headlineBig)",
+        headlineMedium: "var(--headlineMedium)",
+        headlineSmall: "var(--headlineSmall)",
+        spacing: "var(--spacing)",
+      },
+      fontFamily: {
+        mitera: ["Mitera"],
+      },
+    },
+  },
+  variants: {
+    extend: {
+      fontFamily: ["hover", "focus"],
+    },
   },
   plugins: [],
+  corePlugins: {
+    fontFamily: true,
+  },
 };
