@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
 import ScrollSection from "@/components/ScrollSection";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
         />
       </Head>
       <main>
+        <Navbar />
         <Hero />
         <ScrollSection />
         <Footer />

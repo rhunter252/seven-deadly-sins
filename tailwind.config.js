@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionDelay: {
+        2000: "2000ms",
+      },
       colors: {
         backgroundColor: "var(--backgroundColor)",
         primaryColor: "var(--primaryColor)",
